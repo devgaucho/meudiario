@@ -24,7 +24,7 @@
                                 print '<br><font color="gray">';
                                 print '<small>'.strtolower(date('dMY H:i',$mensagem['createdAt'])).' ['.$lenInt.' chars]</small>';                       
                                 print '</font><br>';
-                                print '<br><font size="4" color="#333"><b>'.nl2br($msgStr).'</b></font>';                                
+                                print '<br><font size="4" color="#333"><b>'.nl2br(htmlentities($msgStr)).'</b></font>';                                
                                 print '<br><br><hr NOSHADE size="1" color="silver">';
                             }
                         }else{
